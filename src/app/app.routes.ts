@@ -7,7 +7,7 @@ import { MostPopularComponent } from './components/most-popular/most-popular.com
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-    {path:' ',component:GamesComponent},
+    {path:'',component:GamesComponent},
     {path:'games',component:GamesComponent},
     {path:'highestRated',component:HighestRatedComponent},
     {path:'upcomingGames',component:UpcomingGamesComponent},
