@@ -1,0 +1,16 @@
+
+
+a,h4{
+    color: rgb(212, 212, 218);
+    font-family: "Merriweather", serif;
+  font-size: 1.4rem;
+}
+a:hover,.active{
+    color: rgba(140, 167, 223, 0.884);
+    transform: scale(1.1);
+    border-bottom: 4px solid  rgba(140, 167, 223, 0.884);
+     cursor: pointer;
+    font-weight: 900;
+    border-radius: 3px;
+}
+
