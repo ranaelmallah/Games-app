@@ -1,0 +1,20 @@
+<div class="row px-3 game-container justify-content-center">
+    @for (game of games| search:searchText  ; track game.id) {
+        <div class="col-lg-4 col-md-6 col-sm-10  shadow   mt-2 rounded-0   ">
+            <div class="card game-card">
+                <img [src]='game.image_background'  alt={{game.name}} >
+                <div class="game-info">
+                <h3> {{game.slug}}</h3>
+                <p>+{{game.games_count}}</p>
+                <button class="btn  rounded-0" (click)="togellDetails(game.id)">Show Games</button>
+                @if (showDetails===game.id) {
+                    <h4>Games :</h4>
+                    @for (games of game.games; track $index) {
+                        <p> - {{games.name}},</p>
+                    }
+                }
+                </div>
+            </div>
+        </div>
+    }
+</div>
