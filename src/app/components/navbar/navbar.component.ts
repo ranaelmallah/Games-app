@@ -13,7 +13,6 @@ import { SearchService } from '../../service/search/search.service';
 export class NavbarComponent {
   saerchText=''
   constructor(private SearchService:SearchService){}
-// @Output() searchTextChange=new EventEmitter<string>();
  onSaerchChange(event:Event){
 const value=(event.target as HTMLInputElement ).value;
 this.SearchService.updateSearchText(value)
